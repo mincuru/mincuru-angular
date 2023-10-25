@@ -16,7 +16,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     MatSidenavModule,
   ],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  styleUrls: ['./app.component.sass'],
 })
 export class AppComponent {
   title = 'mincuru-angular';
