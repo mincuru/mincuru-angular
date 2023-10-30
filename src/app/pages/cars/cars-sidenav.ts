@@ -1,8 +1,8 @@
 export interface CarsSidenav {
-  models: KeyValuePair[];
-  bodyType: KeyValuePair[];
-  powerTrain: KeyValuePair[];
-  driveSystem: KeyValuePair[];
+  makers: KeyValuePair[];
+  bodyTypes: KeyValuePair[];
+  powerTrains: KeyValuePair[];
+  driveSystems: KeyValuePair[];
 }
 
 interface KeyValuePair {

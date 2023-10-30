@@ -1,6 +1,6 @@
 export interface CarsFilter {
-  models: string[];
-  bodyType: string[];
-  powerTrain: string[];
-  driveSystem: string[];
+  makers: string[];
+  bodyTypes: string[];
+  powerTrains: string[];
+  driveSystems: string[];
 }

@@ -1,6 +1,9 @@
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav mode="side" opened class="sidenav">
-    <app-cars-sidenav></app-cars-sidenav>
+    <app-cars-sidenav
+      [carsSidenav]="carsSidenav"
+      (carsFilterChange)="filterChange($event)"
+    ></app-cars-sidenav>
   </mat-sidenav>
   <mat-sidenav-content>
     <div>

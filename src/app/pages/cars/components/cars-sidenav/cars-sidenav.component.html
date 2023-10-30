@@ -1,37 +1,52 @@
 <mat-nav-list>
   <p class="sidenav-subtitle">メーカー名</p>
-  <mat-selection-list>
-    <mat-list-option>トヨタ</mat-list-option>
-    <mat-list-option>マツダ</mat-list-option>
-    <mat-list-option>ホンダ</mat-list-option>
-    <mat-list-option>日産</mat-list-option>
+  <mat-selection-list
+    #makers
+    (selectionChange)="makerChange(makers.selectedOptions.selected)"
+  >
+    <mat-list-option
+      *ngFor="let makers of carsSidenav.makers"
+      [value]="makers.value"
+      >{{ makers.title }}</mat-list-option
+    >
   </mat-selection-list>
   <mat-divider />
 </mat-nav-list>
 <mat-nav-list>
   <p class="sidenav-subtitle">ボディタイプ</p>
-  <mat-selection-list>
-    <mat-list-option>SUV</mat-list-option>
-    <mat-list-option>ハッチバック</mat-list-option>
-    <mat-list-option>セダン</mat-list-option>
+  <mat-selection-list
+    #bodyType
+    (selectionChange)="bodyTypeChange(bodyType.selectedOptions.selected)"
+  >
+    <mat-list-option
+      *ngFor="let bodyType of carsSidenav.bodyTypes"
+      [value]="bodyType.value"
+      >{{ bodyType.title }}</mat-list-option
+    >
   </mat-selection-list>
   <mat-divider />
 </mat-nav-list>
 <mat-nav-list>
   <p class="sidenav-subtitle">パワートレーン</p>
-  <mat-selection-list>
-    <mat-list-option>エンジン</mat-list-option>
-    <mat-list-option>ストロングHV</mat-list-option>
-    <mat-list-option>マイルドHV</mat-list-option>
-    <mat-list-option>バッテリーEV</mat-list-option>
-    <mat-list-option>シリーズHV</mat-list-option>
+  <mat-selection-list
+    #powerTrains
+    (selectionChange)="powerTrainChange(powerTrains.selectedOptions.selected)"
+  >
+    <mat-list-option
+      *ngFor="let powerTrain of carsSidenav.powerTrains"
+      [value]="powerTrain.value"
+      >{{ powerTrain.title }}</mat-list-option
+    >
   </mat-selection-list>
   <mat-divider />
 </mat-nav-list>
 <mat-nav-list>
   <p class="sidenav-subtitle">駆動方式</p>
-  <mat-selection-list>
-    <mat-list-option>FF</mat-list-option>
-    <mat-list-option>FR</mat-list-option>
+  <mat-selection-list #driveSystems (selectionChange)="driveSystemChange(driveSystems.selectedOptions.selected)">
+    <mat-list-option
+      *ngFor="let driveSystem of carsSidenav.driveSystems"
+      [value]="driveSystem.value"
+      >{{ driveSystem.title }}</mat-list-option
+    >
   </mat-selection-list>
 </mat-nav-list>
