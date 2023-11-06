@@ -6,7 +6,11 @@
   width: 240px;
 }
 
-// .sidenav-subtitle {
-//   padding-left: 16px;
-//   margin-bottom: 0;
-// }
+.results {
+  display: grid;
+  column-gap: 8px;
+  row-gap: 8px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 280px));
+  margin-top: 16px;
+  justify-content: space-around;
+}

@@ -1,0 +1,27 @@
+<mat-grid-list cols="4" rowHeight="280px" gutterSize="8px">
+  <mat-grid-tile *ngFor="let car of cars">
+    <mat-card>
+      <img
+        mat-card-image
+        class="image"
+        [src]="car.imageUrl"
+        [alt]="car.modelName"
+      />
+      <mat-card-header class="header">
+        <mat-card-title>{{ car.modelName }}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>{{ car.price }}</p>
+        <p>
+          全長 {{ car.body.length }}mm, 全幅 {{ car.body.width }}mm, 全高
+          {{ car.body.height }}mm
+        </p>
+        <p>
+          {{ car.driveSystem }}, {{ car.powerTrain }},
+          {{ car.fuelType }}
+        </p>
+      </mat-card-content>
+      <mat-card-actions></mat-card-actions>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>

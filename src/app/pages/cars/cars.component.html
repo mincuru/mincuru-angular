@@ -6,15 +6,6 @@
     ></app-cars-sidenav>
   </mat-sidenav>
   <mat-sidenav-content>
-    <div>
-      <section>
-        <p>cars works!</p>
-        <button mat-raised-button>Basic</button>
-        <button mat-raised-button color="primary">Primary</button>
-        <button mat-raised-button color="accent">Accent</button>
-        <button mat-raised-button color="warn">Warn</button>
-        <button mat-raised-button disabled>Disabled</button>
-      </section>
-    </div>
+    <app-cars-grid [cars]="cars" />
   </mat-sidenav-content>
 </mat-sidenav-container>
