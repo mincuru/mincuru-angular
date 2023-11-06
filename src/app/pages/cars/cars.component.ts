@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatDividerModule } from '@angular/material/divider';
@@ -19,7 +18,6 @@ import { Car } from 'src/app/models/car';
     CommonModule,
     CarsSidenavComponent,
     CarsGridComponent,
-    MatButtonModule,
     MatSidenavModule,
     MatListModule,
     MatDividerModule,

@@ -5,12 +5,3 @@
 .sidenav {
   width: 240px;
 }
-
-.results {
-  display: grid;
-  column-gap: 8px;
-  row-gap: 8px;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 280px));
-  margin-top: 16px;
-  justify-content: space-around;
-}
